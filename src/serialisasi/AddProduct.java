@@ -25,6 +25,7 @@ public class AddProduct extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         initTable();
+        
     }
 
     /**
@@ -203,7 +204,7 @@ public class AddProduct extends javax.swing.JDialog {
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         String txt_item_name = txtNamaItem.getText();
         String txt_item_price = txtHargaItem.getText();
-        Object[] item = {txt_item_name, txt_item_name};
+        Object[] item = {txt_item_name, txt_item_price};
         model.addRow(item);
     }//GEN-LAST:event_btnTambahActionPerformed
 
